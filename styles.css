@@ -1,0 +1,136 @@
+/* Apply the Google Font */
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+}
+.highlight {
+    text-decoration: blink;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #39d462; /* Soft green for the title */
+}
+
+.add-task-btn {
+    font-family: 'Space Mono', monospace;
+    background-color: #39d462; 
+    color: #1e1e1e;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.add-task-btn:hover {
+    background-color: #178048; /* Darker green on hover */
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: 150px repeat(3, 250px); /* Increase column width for task items */
+    grid-template-rows: repeat(5, 100px); /* Increase row height for items */
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Grid header for priorities */
+.grid-header {
+    background-color: #2f2f2f;
+    border: 2px solid #39d462;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Grid label for time budgets */
+.grid-label {
+    background-color: #2f2f2f;
+    border: 2px solid #39d462;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: right;
+}
+
+/* Grid item styling */
+.grid-item {
+    background-color: #2f2f2f;
+    border: 2px solid #39d462;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Modal styling */
+#taskModal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    justify-content: center;
+    align-items: center; /* Centering the modal */
+}
+
+.modal-content {
+    background-color: #1e1e1e;
+    border: 2px solid #39d462;
+    padding: 20px;
+    width: 300px;
+    max-width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}

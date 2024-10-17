@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Prioritization App</title>
+    
+    <!-- Google Font: Space Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>> Prioritizing Tasks... <span class="highlight">_</span></h1>
+            <button class="add-task-btn" id="addTaskButton">Add New Task</button>
+        </header>
+        
+        <!-- 3x4 Grid Layout with Labels -->
+        <div class="grid">
+            <!-- Empty top-left corner -->
+            <div class="grid-header"></div>
+            <div class="grid-header">High</div>
+            <div class="grid-header">Medium</div>
+            <div class="grid-header">Low</div>
+            
+            <!-- Time labels with empty grid cells -->
+            <div class="grid-label">Short Time</div>
+            <div class="grid-item" id="task1"></div>
+            <div class="grid-item" id="task2"></div>
+            <div class="grid-item" id="task3"></div>
+            
+            <div class="grid-label">Medium Time</div>
+            <div class="grid-item" id="task4"></div>
+            <div class="grid-item" id="task5"></div>
+            <div class="grid-item" id="task6"></div>
+            
+            <div class="grid-label">Long Time</div>
+            <div class="grid-item" id="task7"></div>
+            <div class="grid-item" id="task8"></div>
+            <div class="grid-item" id="task9"></div>
+            
+            <div class="grid-label">Ongoing</div>
+            <div class="grid-item" id="task10"></div>
+            <div class="grid-item" id="task11"></div>
+            <div class="grid-item" id="task12"></div>
+        </div>
+    </div>
+    
+    <!-- Modal for adding a task -->
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Task</h2>
+            <form id="taskForm">
+                <label for="taskText">Task:</label>
+                <input type="text" id="taskText" name="taskText" required><br><br>
+                
+                <label for="priority">Priority:</label>
+                <select id="priority" name="priority">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select><br><br>
+                
+                <label for="timeBudget">Time Budget:</label>
+                <select id="timeBudget" name="timeBudget">
+                    <option value="short">Short</option>
+                    <option value="medium">Medium</option>
+                    <option value="long">Long</option>
+                    <option value="ongoing">Ongoing</option>
+                </select><br><br>
+                
+
+                <button type="submit" id="submitTaskBtn" >Add Task</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
