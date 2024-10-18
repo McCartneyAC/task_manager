@@ -1,0 +1,168 @@
+/* Cottagecore Aesthetic */
+
+/* Apply the Google Fonts */
+body {
+    font-family: 'Homemade Apple', cursive;
+    background-color: #f7f3e9; /* Soft linen/paper-like background color */
+    color: #3e3d32; /* Warm dark brown for text, like ink */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('path_to_your_parchment_texture.jpg'); /* Optional parchment texture */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    max-width: 1000px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Light cream, slightly translucent */
+    border: 2px solid #d1bfa5; /* Delicate border resembling hand-drawn ink */
+    border-radius: 10px; /* Rounded edges for soft feel */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a lifted look */
+    padding: 20px;
+    backdrop-filter: blur(5px); /* Subtle blur for a dreamy vibe */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    color: #6b4b3a; /* Dark brown ink color */
+    letter-spacing: 0.1rem; /* Slight spacing for a grand, vintage feel */
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(107, 75, 58, 0.4); /* Slight shadow to give depth */
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.add-task-btn {
+    font-family: 'Homemade Apple', cursive;
+    background-color: #d8e1d1; /* Soft mossy green */
+    color: #3e3d32;
+    border: 2px solid #bfa17d; /* Delicate, sketchy border */
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded edges */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-task-btn:hover {
+    background-color: #c1d2b5; /* Slightly darker green on hover */
+    transform: scale(1.05);
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 150px repeat(3, 250px); /* Task item widths */
+    grid-template-rows: repeat(5, 100px); /* Task item heights */
+    gap: 15px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly translucent background */
+    border: 2px solid #d1bfa5;
+    border-radius: 10px;
+}
+
+/* Grid Header for Priorities */
+.grid-header {
+    background-color: #f1e8d8; /* Creamy background */
+    border: 2px solid #bfa17d; /* Hand-drawn-like border */
+    padding: 10px;
+    font-size: 1.3rem;
+    color: #6b4b3a; /* Dark ink color */
+    text-align: center;
+}
+
+/* Grid Labels for Time Budgets */
+.grid-label {
+    background-color: #f1e8d8;
+    border: 2px solid #bfa17d;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #6b4b3a;
+    text-align: right;
+}
+
+/* Grid Items */
+.grid-item {
+    background-color: #f1e8d8; /* Warm cream */
+    border: 2px solid #d1bfa5;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow when hovered */
+}
+
+/* Modal Styling */
+#taskModal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #f1e8d8;
+    border: 2px solid #d1bfa5;
+    padding: 20px;
+    width: 300px;
+    max-width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    border-radius: 8px;
+}
+
+/* Modal Close Button */
+.close {
+    color: #6b4b3a;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Links and Hover Effects */
+a {
+    color: #6b4b3a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8f6953;
+    text-decoration: underline; /* Underline on hover */
+}
