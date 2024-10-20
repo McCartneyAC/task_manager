@@ -1,0 +1,117 @@
+/* Apply the Google Font */
+body {
+    font-family: 'Italiana', sans-serif;
+    background-color: #f4f4f4; /* Light gray background for paper-like feel */
+    color: #333333; /* Dark gray for text */
+    margin: 0;
+    padding: 0;
+
+}
+h1 {
+    font-family: 'UnifrakturMaguntia', cursive; /* Title font */
+    font-size: 3rem; /* Larger font for title */
+    color: #000000; /* Black for strong contrast */
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px; /* Wider container for newspaper articles */
+    text-align: left; /* Align text to the left for a newspaper feel */
+}
+
+.highlight {
+    text-decoration: underline; /* Use underline for highlights */
+}
+
+
+/* Article button styling */
+.add-task-btn {
+    font-family: 'Raleway', sans-serif;
+    background-color: #333333; /* Dark gray for buttons */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.add-task-btn:hover {
+    background-color: #555555; /* Slightly lighter gray on hover */
+}
+
+/* Article grid layout */
+
+
+/* Grid header for priorities */
+.grid-header {
+    background-color: #e0e0e0; /* Light gray for grid header */
+    border: 2px solid #cccccc; /* Light border */
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333333; /* Dark text color */
+}
+
+/* Grid label for time budgets */
+.grid-label {
+    background-color: #e0e0e0; /* Light gray for grid label */
+    border: 2px solid #cccccc; /* Light border */
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #333333; /* Dark text color */
+    text-align: right;
+}
+
+/* Grid item styling */
+.grid-item {
+    background-color: #ffffff; /* White for article background */
+    border: 2px solid #cccccc; /* Light border for items */
+    padding: 20px;
+
+    font-size: 16px;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.02); /* Slightly scale on hover */
+}
+
+/* Modal styling */
+#taskModal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    justify-content: center;
+    align-items: center; /* Centering the modal */
+}
+
+.modal-content {
+    background-color: #f4f4f4; /* Light gray for modal background */
+    border: 2px solid #cccccc; /* Light border */
+    padding: 20px;
+    width: 300px;
+    max-width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #333333; /* Dark gray for close button */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #555555; /* Lighter gray on hover */
+    text-decoration: none;
+    cursor: pointer;
+}

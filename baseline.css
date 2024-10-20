@@ -10,10 +10,11 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 95%;
     max-width: 1000px;
     margin-top: 20px;
     text-align: center;
+    margin: 0 auto;
     margin-bottom: 40px; /* Add space below the container */
 }
 

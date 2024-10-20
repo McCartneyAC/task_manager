@@ -1,0 +1,165 @@
+/* Apply the Google Fonts */
+body {
+    font-family: 'Audiowide', sans-serif; /* Body font */
+    background-color: #121212; /* Dark background for a cyberpunk feel */
+    color: #ffffff; /* White text for contrast */
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: 'Sixtyfour Convergence', cursive; /* Cyberpunk title font */
+    font-size: 3rem; /* Larger font for title */
+    color: #00ffcc; /* Neon cyan for strong contrast */
+    text-shadow: 0 0 20px #00ffcc, 0 0 30px #ff00ff; /* Neon glow effect */
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px; /* Maintain a wide container */
+    text-align: left; /* Align text to the left */
+    position: relative; /* For positioning neon effects */
+}
+
+.highlight {
+    text-shadow: 0 0 10px #39d462; /* Neon green glow for highlights */
+    text-decoration: none; /* No underline */
+}
+
+/* Header styling */
+header {
+    position: relative; /* Position for neon effect */
+}
+
+
+
+/* Article button styling */
+.add-task-btn {
+    font-family: 'Audiowide', sans-serif; /* Body font */
+    background-color: #ff00ff; /* Neon magenta */
+    color: #1e1e1e; /* Dark text for contrast */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.add-task-btn:hover {
+    background-color: #cc00cc; /* Darker magenta on hover */
+}
+
+
+
+/* Grid header for priorities */
+.grid-header {
+    background-color: #1a1a1a; /* Darker gray for grid header */
+    border: 2px solid #00ffcc; /* Neon cyan border */
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ffffff; /* White text */
+}
+
+/* Grid label for time budgets */
+.grid-label {
+    background-color: #1a1a1a; /* Darker gray for grid label */
+    border: 2px solid #00ffcc; /* Neon cyan border */
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #ffffff; /* White text */
+    text-align: right;
+}
+
+/* Grid item styling */
+.grid-item {
+    background-color: #222222; /* Slightly lighter for item background */
+    border: 2px solid #00ffcc; /* Neon cyan border */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Allow for vertical stacking */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: flex-start; /* Align items to the left */
+    font-size: 16px;
+    border-radius: 4px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for effects */
+}
+
+.grid-item:hover {
+    transform: scale(1.03); /* Slightly scale on hover */
+    box-shadow: 0 0 20px #00ffcc; /* Neon glow on hover */
+}
+
+/* Modal styling */
+#taskModal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with opacity */
+    justify-content: center;
+    align-items: center; /* Centering the modal */
+}
+
+.modal-content {
+    background-color: #121212; /* Dark background for modal */
+    border: 2px solid #00ffcc; /* Neon cyan border */
+    padding: 20px;
+    width: 300px;
+    max-width: 100%;
+    text-align: center;
+    box-shadow: 0 0 20px #00ffcc; /* Neon glow for modal */
+}
+
+.close {
+    color: #ffffff; /* White for close button */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #cc00cc; /* Lighter pink on hover */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
