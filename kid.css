@@ -6,17 +6,19 @@ body {
     color: #333; /* Dark text color for readability */
     margin: 0;
     padding: 0;
+    font-size: 2rem
 }
 
 h1 {
     font-family: 'Londrina Sketch', cursive; /* Title font */
     color: #ff6347; /* Bright tomato color for headings */
     text-shadow: 1px 1px 2px #ffffff; /* Light shadow for a playful effect */
+    font-size: 5rem;
 }
 
+
 .container {
-    width: 80%;
-    max-width: 1000px;
+    width: 95%;
     text-align: center;
     border: 2px dashed #ffcc00; /* Dotted border like a child’s drawing */
     padding: 20px;

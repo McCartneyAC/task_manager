@@ -5,19 +5,15 @@ body {
     color: #333333; /* Dark gray for text */
     margin: 0;
     padding: 0;
-
+    font-size: 2rem;
 }
 h1 {
     font-family: 'UnifrakturMaguntia', cursive; /* Title font */
     font-size: 3rem; /* Larger font for title */
     color: #000000; /* Black for strong contrast */
+    
 }
 
-.container {
-    width: 80%;
-    max-width: 1200px; /* Wider container for newspaper articles */
-    text-align: left; /* Align text to the left for a newspaper feel */
-}
 
 .highlight {
     text-decoration: underline; /* Use underline for highlights */

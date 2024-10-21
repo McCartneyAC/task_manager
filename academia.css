@@ -4,22 +4,24 @@
 
 body {
     font-family: 'Cormorant Garamond', serif;
-    background-color: #f4e1c9; /* Faded parchment */
+     /*background-color: #f4e1c9; /* Faded parchment */*/
     color: #3e3531; /* Iron gall ink color */
     margin: 0;
     padding: 0;
+    background-image: url('C:\Users\A.McCartney\Desktop\matrix_project\academiabg.jpg'); /* Update with your actual image path */
+    background-size: auto; /* Ensures the image covers the entire viewport */
+    background-repeat: repeat; /* Allows the image to tile if the page grows larger */
+    background-position: center; /* Centers the image to avoid awkward alignment */
 }
 
 h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
     color: #3e3531; /* Iron gall ink */
+    font-size: 4rem;
 }
 
-.container {
-    width: 80%;
-    max-width: 1000px;
-}
+
 
 .add-task-btn {
     font-family: 'Cormorant Garamond', serif;

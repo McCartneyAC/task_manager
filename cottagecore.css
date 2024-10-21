@@ -13,7 +13,7 @@ body {
 }
 h1 {
     font-family: 'Cinzel', serif;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #6b4b3a; /* Dark brown ink color */
     letter-spacing: 0.1rem; /* Slight spacing for a grand, vintage feel */
     text-align: center;
@@ -24,7 +24,6 @@ h1 {
 /* Container */
 .container {
     width: 80%;
-    max-width: 1000px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8); /* Light cream, slightly translucent */
     border: 2px solid #d1bfa5; /* Delicate border resembling hand-drawn ink */

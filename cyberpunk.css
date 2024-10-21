@@ -13,12 +13,7 @@ h1 {
     text-shadow: 0 0 20px #00ffcc, 0 0 30px #ff00ff; /* Neon glow effect */
 }
 
-.container {
-    width: 80%;
-    max-width: 1200px; /* Maintain a wide container */
-    text-align: left; /* Align text to the left */
-    position: relative; /* For positioning neon effects */
-}
+
 
 .highlight {
     text-shadow: 0 0 10px #39d462; /* Neon green glow for highlights */

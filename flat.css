@@ -5,7 +5,7 @@ body {
     color: #212529; /* Dark gray for text */
     margin: 0;
     padding: 0;
-
+    font-size: 2rem;
 }
 h1 {
     font-family: 'Bebas Neue', sans-serif; /* Title font */
@@ -14,10 +14,6 @@ h1 {
     text-transform: uppercase; /* Uppercase for a modern look */
 }
 
-.container {
-    width: 80%;
-    max-width: 1000px;
-}
 
 /* Add task button styling */
 .add-task-btn {
