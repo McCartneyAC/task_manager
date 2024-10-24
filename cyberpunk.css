@@ -5,6 +5,12 @@ body {
     color: #ffffff; /* White text for contrast */
     margin: 0;
     padding: 0;
+    background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/vaporwavebg.png');
+    /* background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/cottagecorebg.png');*/
+    /* background-size: auto; Ensures the image covers the entire viewport */
+    background-size: cover;
+    /* background-size: contain;*/
+    /* background-repeat: repeat; Allows the image to tile if the page grows larger */
 }
 h1 {
     font-family: 'Sixtyfour Convergence', cursive; /* Cyberpunk title font */
@@ -12,7 +18,23 @@ h1 {
     color: #00ffcc; /* Neon cyan for strong contrast */
     text-shadow: 0 0 20px #00ffcc, 0 0 30px #ff00ff; /* Neon glow effect */
 }
+.title-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 15px 20px; /* Adds padding for spacing around the text */
+    text-align: center; /* Center aligns the title */
+    width: fit-content; /* Keeps the background close to the text size */
+    margin: 20px auto; /* Centers the container horizontally */
+    border-radius: 10px; /* Rounded corners */
+}
 
+.bust {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 150px; /* Adjust as needed */
+    display: block; /* Show the bust for vaporwave */
+    z-index: 10; /* Ensure it's on top of other elements */
+}
 
 
 .highlight {

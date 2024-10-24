@@ -23,6 +23,9 @@ header {
     margin-bottom: 20px;
     align: center;
 }
+.bust {
+    display: none; /* Hide by default */
+}
 
 /* Buttons Layout */
 .add-task-btn {

@@ -245,7 +245,6 @@ toggleViewButton.addEventListener("click", () => {
         toggleViewButton.textContent = "View Task Graveyard";
     }
 });
-
 // Function to switch themes
 function switchTheme(themeId) {
     // Disable all theme stylesheets
@@ -263,12 +262,28 @@ function switchTheme(themeId) {
     }
 }
 
-// Example: Add event listeners for buttons to change themes
+// Load the default theme (flat.css) on page load
+function loadDefaultTheme() {
+    const linkElement = document.createElement("link");
+    linkElement.rel = "stylesheet";
+    linkElement.href = "flat.css";
+    linkElement.id = "flatTheme";
+    document.head.appendChild(linkElement);
+
+    // Load saved theme from local storage if any
+    const savedTheme = localStorage.getItem('selectedTheme');
+    if (savedTheme && savedTheme !== 'flatTheme') {
+        switchTheme(savedTheme);
+    }
+}
+
+// Event listener for the change aesthetic button
 document.getElementById("changeAestheticButton").addEventListener("click", () => {
-    // Here you can add a dropdown or modal to select a specific theme
-    // For now, we'll just cycle through themes for demonstration
     const themes = ["academiaTheme", "cottagecoreTheme", "cyberpunkTheme", "flatTheme", "ideTheme", "kidTheme", "newspaperTheme"];
-    let currentThemeIndex = themes.indexOf(localStorage.getItem("selectedTheme") || "academiaTheme");
+    let currentThemeIndex = themes.indexOf(localStorage.getItem("selectedTheme") || "flatTheme");
     currentThemeIndex = (currentThemeIndex + 1) % themes.length;
     switchTheme(themes[currentThemeIndex]);
 });
+
+// Load the default theme on page load
+document.addEventListener("DOMContentLoaded", loadDefaultTheme);
