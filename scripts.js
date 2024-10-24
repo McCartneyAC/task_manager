@@ -266,7 +266,7 @@ function switchTheme(themeId) {
 function loadDefaultTheme() {
     const linkElement = document.createElement("link");
     linkElement.rel = "stylesheet";
-    linkElement.href = "flat.css";
+    linkElement.href = "aesthetics/flat.css";
     linkElement.id = "flatTheme";
     document.head.appendChild(linkElement);
 
