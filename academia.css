@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('/academiabg.jpg'); /* Update with your actual image path */
+    background-image: url('https://McCartneyac.github.io/task_manager/academiabg.jpg');
     background-size: auto; /* Ensures the image covers the entire viewport */
     background-repeat: repeat; /* Allows the image to tile if the page grows larger */
     background-position: center; /* Centers the image to avoid awkward alignment */
