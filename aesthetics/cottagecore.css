@@ -7,22 +7,27 @@ body {
     color: #3e3d32; /* Warm dark brown for text, like ink */
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-image: url('path_to_your_parchment_texture.jpg'); /* Optional parchment texture */
-    background-size: cover;
-    background-position: center;
+    background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/cottagecorebg.png');
+    /* background-size: auto; Ensures the image covers the entire viewport */
+    /*background-size: cover;*/
+    background-size: contain;
+    background-repeat: repeat; /* Allows the image to tile if the page grows larger */
+}
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 4rem;
+    color: #6b4b3a; /* Dark brown ink color */
+    letter-spacing: 0.1rem; /* Slight spacing for a grand, vintage feel */
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(107, 75, 58, 0.4); /* Slight shadow to give depth */
+    margin-bottom: 10px;
 }
 
 /* Container */
 .container {
-    width: 85%;
-    max-width: 1000px;
+    width: 80%;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Light cream, slightly translucent */
+    background-color: rgba(255, 255, 255, 0.5); /* Light cream, slightly translucent */
     border: 2px solid #d1bfa5; /* Delicate border resembling hand-drawn ink */
     border-radius: 10px; /* Rounded edges for soft feel */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a lifted look */
@@ -30,23 +35,6 @@ body {
     backdrop-filter: blur(5px); /* Subtle blur for a dreamy vibe */
 }
 
-/* Header Styling */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-h1 {
-    font-family: 'Cinzel', serif;
-    font-size: 3rem;
-    color: #6b4b3a; /* Dark brown ink color */
-    letter-spacing: 0.1rem; /* Slight spacing for a grand, vintage feel */
-    text-align: center;
-    text-shadow: 2px 2px 5px rgba(107, 75, 58, 0.4); /* Slight shadow to give depth */
-    margin-bottom: 10px;
-}
 
 /* Buttons */
 .add-task-btn {
@@ -66,17 +54,7 @@ h1 {
     transform: scale(1.05);
 }
 
-/* Grid Layout */
-.grid {
-    display: grid;
-    grid-template-columns: 150px repeat(3, 250px); /* Task item widths */
-    grid-template-rows: repeat(5, 100px); /* Task item heights */
-    gap: 15px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly translucent background */
-    border: 2px solid #d1bfa5;
-    border-radius: 10px;
-}
+
 
 /* Grid Header for Priorities */
 .grid-header {

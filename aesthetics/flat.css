@@ -5,33 +5,15 @@ body {
     color: #212529; /* Dark gray for text */
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    font-size: 2rem;
 }
-
-.container {
-    width: 80%;
-    max-width: 1000px;
-    text-align: center;
-}
-
-/* Header styling */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
 h1 {
     font-family: 'Bebas Neue', sans-serif; /* Title font */
     font-size: 3rem; /* Larger size for prominence */
     color: #007bff; /* Bootstrap blue for the title */
     text-transform: uppercase; /* Uppercase for a modern look */
 }
+
 
 /* Add task button styling */
 .add-task-btn {
@@ -50,14 +32,6 @@ h1 {
     background-color: #0056b3; /* Darker blue on hover */
 }
 
-/* Grid layout */
-.grid {
-    display: grid;
-    grid-template-columns: 150px repeat(3, 250px); /* Keep original layout */
-    grid-template-rows: repeat(5, 100px); /* Keep original layout */
-    gap: 10px;
-    padding: 20px;
-}
 
 /* Grid header for priorities */
 .grid-header,

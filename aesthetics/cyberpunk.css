@@ -5,20 +5,37 @@ body {
     color: #ffffff; /* White text for contrast */
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Align items to the top for a more dynamic layout */
-    height: auto; /* Let content dictate height */
-    overflow: hidden; /* Hide overflow for a cleaner look */
+    background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/vaporwavebg.png');
+    /* background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/cottagecorebg.png');*/
+    /* background-size: auto; Ensures the image covers the entire viewport */
+    background-size: cover;
+    /* background-size: contain;*/
+    /* background-repeat: repeat; Allows the image to tile if the page grows larger */
+}
+h1 {
+    font-family: 'Sixtyfour Convergence', cursive; /* Cyberpunk title font */
+    font-size: 3rem; /* Larger font for title */
+    color: #00ffcc; /* Neon cyan for strong contrast */
+    text-shadow: 0 0 20px #00ffcc, 0 0 30px #ff00ff; /* Neon glow effect */
+}
+.title-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 15px 20px; /* Adds padding for spacing around the text */
+    text-align: center; /* Center aligns the title */
+    width: fit-content; /* Keeps the background close to the text size */
+    margin: 20px auto; /* Centers the container horizontally */
+    border-radius: 10px; /* Rounded corners */
 }
 
-.container {
-    width: 80%;
-    max-width: 1200px; /* Maintain a wide container */
-    text-align: left; /* Align text to the left */
-    position: relative; /* For positioning neon effects */
+.bust {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 150px; /* Adjust as needed */
+    display: block; /* Show the bust for vaporwave */
+    z-index: 10; /* Ensure it's on top of other elements */
 }
+
 
 .highlight {
     text-shadow: 0 0 10px #39d462; /* Neon green glow for highlights */
@@ -27,19 +44,10 @@ body {
 
 /* Header styling */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
     position: relative; /* Position for neon effect */
 }
 
-h1 {
-    font-family: 'Sixtyfour Convergence', cursive; /* Cyberpunk title font */
-    font-size: 3rem; /* Larger font for title */
-    color: #00ffcc; /* Neon cyan for strong contrast */
-    text-shadow: 0 0 20px #00ffcc, 0 0 30px #ff00ff; /* Neon glow effect */
-}
+
 
 /* Article button styling */
 .add-task-btn {
@@ -58,13 +66,7 @@ h1 {
     background-color: #cc00cc; /* Darker magenta on hover */
 }
 
-/* Article grid layout */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
-    gap: 15px;
-    padding: 20px;
-}
+
 
 /* Grid header for priorities */
 .grid-header {

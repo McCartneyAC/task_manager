@@ -5,36 +5,20 @@ body {
     color: #333333; /* Dark gray for text */
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Align items to the top for a more traditional layout */
-    height: auto; /* Let content dictate height */
+    font-size: 2rem;
+}
+h1 {
+    font-family: 'UnifrakturMaguntia', cursive; /* Title font */
+    font-size: 3rem; /* Larger font for title */
+    color: #000000; /* Black for strong contrast */
+    
 }
 
-.container {
-    width: 80%;
-    max-width: 1200px; /* Wider container for newspaper articles */
-    text-align: left; /* Align text to the left for a newspaper feel */
-}
 
 .highlight {
     text-decoration: underline; /* Use underline for highlights */
 }
 
-/* Header styling */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-h1 {
-    font-family: 'UnifrakturMaguntia', cursive; /* Title font */
-    font-size: 3rem; /* Larger font for title */
-    color: #000000; /* Black for strong contrast */
-}
 
 /* Article button styling */
 .add-task-btn {
@@ -53,12 +37,7 @@ h1 {
 }
 
 /* Article grid layout */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
-    gap: 15px;
-    padding: 20px;
-}
+
 
 /* Grid header for priorities */
 .grid-header {
@@ -85,10 +64,7 @@ h1 {
     background-color: #ffffff; /* White for article background */
     border: 2px solid #cccccc; /* Light border for items */
     padding: 20px;
-    display: flex;
-    flex-direction: column; /* Allow for vertical stacking */
-    justify-content: flex-start; /* Align items to the top */
-    align-items: flex-start; /* Align items to the left */
+
     font-size: 16px;
     border-radius: 4px;
     transition: transform 0.2s ease;

@@ -5,34 +5,17 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+}
+h1 {
+    font-size: 4rem;
+    color: #39d462; /* Soft green for the title */
 }
 
-.container {
-    width: 80%;
-    max-width: 1000px;
-    text-align: center;
-}
 .highlight {
     text-decoration: blink;
 }
 
-/* Header styling */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
 
-h1 {
-    font-size: 2.5rem;
-    color: #39d462; /* Soft green for the title */
-}
 
 .add-task-btn {
     font-family: 'Space Mono', monospace;
@@ -49,14 +32,6 @@ h1 {
     background-color: #178048; /* Darker green on hover */
 }
 
-/* Grid layout */
-.grid {
-    display: grid;
-    grid-template-columns: 150px repeat(3, 250px); /* Increase column width for task items */
-    grid-template-rows: repeat(5, 100px); /* Increase row height for items */
-    gap: 10px;
-    padding: 20px;
-}
 
 /* Grid header for priorities */
 .grid-header {
