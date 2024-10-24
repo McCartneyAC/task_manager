@@ -7,9 +7,11 @@ body {
     color: #3e3d32; /* Warm dark brown for text, like ink */
     margin: 0;
     padding: 0;
-    background-image: url('path_to_your_parchment_texture.jpg'); /* Optional parchment texture */
-    background-size: cover;
-    background-position: center;
+    background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/cottagecorebg.png');
+    /* background-size: auto; Ensures the image covers the entire viewport */
+    /*background-size: cover;*/
+    background-size: contain;
+    background-repeat: repeat; /* Allows the image to tile if the page grows larger */
 }
 h1 {
     font-family: 'Cinzel', serif;
@@ -25,7 +27,7 @@ h1 {
 .container {
     width: 80%;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Light cream, slightly translucent */
+    background-color: rgba(255, 255, 255, 0.5); /* Light cream, slightly translucent */
     border: 2px solid #d1bfa5; /* Delicate border resembling hand-drawn ink */
     border-radius: 10px; /* Rounded edges for soft feel */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a lifted look */

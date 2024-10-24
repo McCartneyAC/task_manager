@@ -8,13 +8,22 @@ body {
     color: #3e3531; /* Iron gall ink color */
     margin: 0;
     padding: 0;
-    background-image: url('/academiabg.jpg'); /* Update with your actual image path */
-    background-image: url('https://McCartneyac.github.io/task_manager/academiabg.jpg');
-    background-size: auto; /* Ensures the image covers the entire viewport */
+    background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/academiabg.jpg');
+    /* background-size: auto; Ensures the image covers the entire viewport */
+    /*background-size: cover;*/
+    background-size: contain;
     background-repeat: repeat; /* Allows the image to tile if the page grows larger */
     background-position: center; /* Centers the image to avoid awkward alignment */
 }
 
+.title-container {
+    background-color: rgba(237, 224, 212, 0.93); /* Semi-transparent background */
+    padding: 10 px 20px; /* Adds padding for spacing around the text */
+    text-align: center; /* Center aligns the title */
+    width: fit-content; /* Keeps the background close to the text size */
+    margin: 20px auto; /* Centers the container horizontally */
+    border-radius: 10px; /* Rounded corners */
+}
 h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
