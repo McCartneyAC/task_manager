@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     /* background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/cottagecorebg.png'); */
-    background-image: url('/cottagecorebg.png');
+    background-image: url('https://mccartneyac.github.io/task_manager/cottagecorebg.png');
     /* background-size: auto; Ensures the image covers the entire viewport */
     /*background-size: cover;*/
     background-size: contain;
