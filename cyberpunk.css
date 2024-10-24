@@ -1,22 +1,22 @@
 /* Apply the Google Fonts */
 body {
-    font-family: 'Audiowide', sans-serif; /* Body font */
-    background-color: #121212; /* Dark background for a cyberpunk feel */
-    color: #ffffff; /* White text for contrast */
+    font-family: 'Audiowide', sans-serif; 
+    background-color: #121212; 
+    color: #ffffff; 
     margin: 0;
     padding: 0;
-    background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/vaporwavebg.png');
-    /* background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/cottagecorebg.png');*/
+    /*background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/vaporwavebg.png');*/
+    background-image: url('https://mccartneyac.github.io/task_manager/vaporwavebg.png');
     /* background-size: auto; Ensures the image covers the entire viewport */
     background-size: cover;
     /* background-size: contain;*/
     /* background-repeat: repeat; Allows the image to tile if the page grows larger */
 }
 h1 {
-    font-family: 'Sixtyfour Convergence', cursive; /* Cyberpunk title font */
-    font-size: 3rem; /* Larger font for title */
-    color: #00ffcc; /* Neon cyan for strong contrast */
-    text-shadow: 0 0 20px #00ffcc, 0 0 30px #ff00ff; /* Neon glow effect */
+    font-family: 'Sixtyfour Convergence', cursive; 
+    font-size: 3rem;
+    color: #00ffcc; 
+    text-shadow: 0 0 20px #00ffcc, 0 0 30px #ff00ff; 
 }
 .title-container {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
