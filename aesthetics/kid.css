@@ -1,6 +1,7 @@
 /* Kid Aesthetic Styles */
 body {
-    font-family: 'Edu AU VIC WA NT Guides', sans-serif; /* Body text font */
+    /*font-family: "Fredericka the Great", cursive; */
+    font-family: 'Edu AU VIC WA NT Guides', sans-serif; /* Body text font */ 
     background-color: #f5f5dc; /* Light beige for loose-leaf paper */
     background-image: url('path/to/paper-texture.jpg'); /* Paper texture image */
     color: #333; /* Dark text color for readability */
@@ -10,10 +11,15 @@ body {
 }
 
 h1 {
-    font-family: 'Londrina Sketch', cursive; /* Title font */
+
+    font-family: "Fredericka the Great", cursive; /* Title font */
     color: #ff6347; /* Bright tomato color for headings */
-    text-shadow: 1px 1px 2px #ffffff; /* Light shadow for a playful effect */
-    font-size: 5rem;
+   /* text-shadow: 1px 1px 2px #ffffff;  Light shadow for a playful effect */
+    font-size: 120px;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
 }
 
 
