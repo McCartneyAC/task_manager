@@ -2,6 +2,10 @@
 body {
     font-family: 'Italiana', sans-serif;
     background-color: #f4f4f4; /* Light gray background for paper-like feel */
+    background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/img/newspaper.png');
+    background-image: url('https://mccartneyac.github.io/task_manager/img/newspaper.png');
+    /* background-image: url('');*/
+    background-size: cover;
     color: #333333; /* Dark gray for text */
     margin: 0;
     padding: 0;
@@ -14,7 +18,14 @@ h1 {
     
 }
 
-
+.title-container {
+    background-color: rgba(240, 240, 240, 0.5); /* Semi-transparent background */
+    padding: 15px 20px; /* Adds padding for spacing around the text */
+    text-align: center; /* Center aligns the title */
+    width: fit-content; /* Keeps the background close to the text size */
+    margin: 20px auto; /* Centers the container horizontally */
+    border-radius: 10px; /* Rounded corners */
+}
 .highlight {
     text-decoration: underline; /* Use underline for highlights */
 }
