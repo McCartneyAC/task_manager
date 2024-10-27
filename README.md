@@ -5,4 +5,4 @@ Features ability to change the aesthetic look and feel of the site to give you s
 
 
 
-Written, of course, by chatGPT 4-o. 
+Written, of course, by chatGPT 4-o with detail help from yours truly.
