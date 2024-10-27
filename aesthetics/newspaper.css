@@ -2,7 +2,7 @@
 body {
     font-family: 'Italiana', sans-serif;
     background-color: #f4f4f4; /* Light gray background for paper-like feel */
-    background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/img/newspaper.png');
+    /*background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/img/newspaper.png');*/
     background-image: url('https://mccartneyac.github.io/task_manager/img/newspaper.png');
     /* background-image: url('');*/
     background-size: cover;
