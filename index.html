@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="aesthetics/ide.css" id="ideTheme" disabled>
     <link rel="stylesheet" href="aesthetics/kid.css" id="kidTheme" disabled>
     <link rel="stylesheet" href="aesthetics/newspaper.css" id="newspaperTheme" disabled>
+    <link rel="stylesheet" href="aesthetics/zen.css" id="zenTheme" disabled>
     
 
     <!-- Google Fonts -->
@@ -35,9 +36,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italiana&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
-    
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script:wght@400..700&family=Nanum+Brush+Script&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -90,6 +91,7 @@
     <div id="graveyardTasks" class="grid">
         <!-- Completed tasks will be appended here -->
     </div>
+    <button id="clearGraveyardButton" class="clear-btn">Clear All Tasks from Graveyard</button>
 </div>
 <!-- Task Modal -->
 <div id="taskModal" class="modal">
@@ -125,6 +127,16 @@
         </form>
     </div>
 </div>
+<!-- Exhume Task Confirmation Modal -->
+<div id="exhumeModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeExhumeModal">&times;</span>
+        <p>Do you want to exhume this task?</p>
+        <button id="confirmExhumeBtn" class="exhume-btn">Exhume Task</button>
+        <button id="cancelExhumeBtn" class="clear-btn">Cancel</button>
+    </div>
+</div>
+
 
     <script src="js/scripts.js"></script> <!-- Ensure this is at the end -->
     <script src="js/themes.js"></script>
