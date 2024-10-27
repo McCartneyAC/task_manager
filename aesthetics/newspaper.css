@@ -2,18 +2,18 @@
 body {
     font-family: 'Italiana', sans-serif;
     background-color: #f4f4f4; /* Light gray background for paper-like feel */
-    /*background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/img/newspaper.png');*/
+    background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/img/newspaper.png');
     background-image: url('https://mccartneyac.github.io/task_manager/img/newspaper.png');
     /* background-image: url('');*/
     background-size: cover;
     color: #333333; /* Dark gray for text */
     margin: 0;
     padding: 0;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 h1 {
     font-family: 'UnifrakturMaguntia', cursive; /* Title font */
-    font-size: 3rem; /* Larger font for title */
+    font-size: 4rem; /* Larger font for title */
     color: #000000; /* Black for strong contrast */
     
 }
