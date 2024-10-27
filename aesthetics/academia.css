@@ -8,7 +8,7 @@ body {
     color: #3e3531; /* Iron gall ink color */
     margin: 0;
     padding: 0;
-    background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/img/academiabg.jpg');
+    background-image: url('https://mccartneyac.github.io/task_manager/img/academiabg.jpg');
     /* background-size: auto; Ensures the image covers the entire viewport */
     /*background-size: cover;*/
     background-size: contain;
