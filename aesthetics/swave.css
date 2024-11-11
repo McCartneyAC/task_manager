@@ -4,7 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #c4c4c4; /* Soft grey for a retro-tech vibe */
-    background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/img/cosmos.png'); /* Background with a retrofuturistic Soviet theme */
+    background-image: url('https://mccartneyac.github.io/task_manager/img/cosmos.png'); /* Background with a retrofuturistic Soviet theme */
     background-size: cover;
     background-position: center;
     margin: 0;
