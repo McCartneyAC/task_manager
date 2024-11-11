@@ -5,10 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!--<link rel="icon" href="img/favicon.ico" type="image/x-icon">-->
     <title>Task Prioritization App</title>
     <!-- Baseline CSS -->
     <link rel="stylesheet" href="aesthetics/baseline.css">
+    <!-- Grid-specific CSS (initially enabled) -->
+    <link rel="stylesheet" href="aesthetics/grid.css" id="gridCss" >
+    <!-- List-specific CSS (initially disabled) -->
+    <link rel="stylesheet" href="aesthetics/list.css" id="listCss" disabled>
 
     <!-- Theme-specific CSS Files (initially disabled) -->
     <link rel="stylesheet" href="aesthetics/academia.css" id="academiaTheme" disabled>
@@ -19,6 +23,8 @@
     <link rel="stylesheet" href="aesthetics/kid.css" id="kidTheme" disabled>
     <link rel="stylesheet" href="aesthetics/newspaper.css" id="newspaperTheme" disabled>
     <link rel="stylesheet" href="aesthetics/zen.css" id="zenTheme" disabled>
+    <link rel="stylesheet" href="aesthetics/swing.css" id="swingTheme" disabled>
+    <link rel="stylesheet" href="aesthetics/swave.css" id ="swaveTheme" disabled>
     
 
     <!-- Google Fonts -->
@@ -39,18 +45,18 @@
         <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italiana&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script:wght@400..700&family=Nanum+Brush+Script&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script:wght@400..700&family=Nanum+Brush+Script&family=Orbitron:wght@400..900&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
 		<div class="title-container">
    			<h1>Prioritizing Tasks</h1>
-		</div>
-    		<button id="addTaskButton" class="add-task-btn">Add New Task</button>
+ 		</div>
+		<button id="addTaskButton" class="add-task-btn">Add New Task</button>
     		<button id="changeAestheticButton" class="add-task-btn">Change Aesthetic</button>
     		<button id="toggleViewButton" class="add-task-btn">View Task Graveyard</button>
-
+                <button id="toggleGridListViewButton" class="add-task-btn">List View</button>
         </header>
         <div id="taskGridContainer" class="container">
         	<!-- 3x4 Grid Layout -->
@@ -138,8 +144,13 @@
 </div>
 
 
-    <script src="js/scripts.js"></script> <!-- Ensure this is at the end -->
-    <script src="js/themes.js"></script>
-    <script src="js/graveyard.js"></script>
+<script src="js/scripts.js" defer></script>
+<script src="js/themes.js" defer></script>
+<script src="js/graveyard.js" defer></script>
+<script src="js/toggle.js" defer></script>
+
+
+
+
 </body>
 </html>
