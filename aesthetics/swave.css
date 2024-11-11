@@ -1,0 +1,199 @@
+/* Sovietwave + Retrofuturism Aesthetic CSS */
+
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #c4c4c4; /* Soft grey for a retro-tech vibe */
+    background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/img/cosmos.png'); /* Background with a retrofuturistic Soviet theme */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Title Styling */
+h1 {
+    font-family: 'Orbitron', sans-serif; /* Futuristic font for headings */
+    font-size: 4rem;
+    color: #ff4d4d; /* Bright red for a Soviet propaganda feel */
+    text-align: center;
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8); /* Neon-like shadow for extra pop */
+    font-weight: bold;
+}
+
+/* Title Container */
+.title-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background for emphasis */
+    padding: 15px 30px;
+    text-align: center;
+    width: fit-content;
+    margin: 40px auto;
+    border-radius: 10px;
+    border: 3px solid #ff4d4d; /* Bright red border for prominence */
+}
+
+/* Buttons Styling */
+.add-task-btn {
+    font-family: 'Roboto', sans-serif;
+    background-color: #303030; /* Dark grey for a serious tone */
+    color: #ffcc00; /* Bright yellow for high visibility */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-task-btn:hover {
+    background-color: #ff4d4d; /* Red for hover effect */
+    box-shadow: 0 0 15px rgba(255, 77, 77, 0.6); /* Glow effect */
+}
+
+/* Grid Layout Styles */
+.grid {
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* Grid Headers and Items */
+.grid-header {
+    padding: 12px;
+    font-family: 'Bebas Neue', cursive; /* Bold and impactful font */
+    background-color: #2e2e2e; /* Dark background */
+    color: #ffcc00; /* Yellow to contrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid #ff4d4d; /* Red border */
+}
+
+.grid-label {
+    padding: 12px;
+    font-family: 'Bebas Neue', cursive;
+    background-color: #2e2e2e;
+    color: #ffcc00;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-radius: 5px;
+    border: 2px solid #ff4d4d;
+}
+
+.grid-item {
+    padding: 20px;
+    background-color: #3a3a3a; /* Dark grey for retro tech feel */
+    border: 2px solid #ffcc00; /* Yellow for accent */
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3); /* Add depth */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 120px;
+    transition: transform 0.2s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+}
+
+/* Task Container Styling */
+.task-container {
+    background-image: url('https://mccartneyac.github.io/task_manager/img/soviet_vintage_ticket.png'); /* Vintage ticket or stamp background */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ffcc00;
+    position: relative;
+}
+
+/* Delete Button Styling */
+.delete-task {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff4d4d; /* Red for urgency */
+}
+
+/* List View Styling */
+.list-item {
+    background-color: #2e2e2e; /* Dark grey for list items */
+    padding: 25px;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.list-item:hover {
+    background-color: #3a3a3a;
+    transform: scale(1.02);
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #2e2e2e;
+    padding: 25px;
+    border: 3px solid #ff4d4d;
+    width: 350px;
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Close Button for Modals */
+.close {
+    color: #ffcc00;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ff4d4d;
+}  
+
+/* Retro Static Effect - Optional Feature */
+@keyframes staticEffect {
+    0% {
+        opacity: 0.9;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.9;
+    }
+}
+
+.static-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://mccartneyac.github.io/task_manager/img/static_overlay.png');
+    opacity: 0.1;
+    pointer-events: none;
+    animation: staticEffect 3s infinite;
+}

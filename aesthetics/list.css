@@ -1,0 +1,53 @@
+/* List Layout Styles */
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Add spacing between list items */
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Individual List Items */
+.list-item {
+    background-color: #f9f9f9; /* Light background color for better readability */
+    border: 1px solid #ddd; /* Subtle border to define items */
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for interactivity */
+}
+
+/* Add a highlight effect on hover */
+.list-item:hover {
+    background-color: #f1f1f1; /* Slightly darker background on hover */
+    transform: scale(1.02); /* Slight scaling effect */
+}
+
+/* Headers and Labels - Hide in List View */
+.grid-header, .grid-label {
+    display: none; /* Hide these in list view */
+}
+
+/* Task Container Layout */
+.task-container {
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Delete Button Layout */
+.delete-task {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #dc3545; /* Red color for delete button */
+}
+
+/* Hidden Class to Toggle Views */
+.hidden {
+    display: none;
+}

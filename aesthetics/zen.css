@@ -4,8 +4,8 @@ body {
     color: #333333; /* Soft dark grey for readability */
     margin: 0;
     padding: 0;
-    /* background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/img/zen.png'); */
-    background-image: url('https://mccartneyac.github.io/task_manager/img/zen.png');
+    background-image: url('C:/Users/A.McCartney/Desktop/matrix_project/img/zen.png');
+    /* background-image: url('https://mccartneyac.github.io/task_manager/img/zen.png');*/
     background-size: cover; /* Cover the entire viewport with the background */
     background-position: center;
 }
