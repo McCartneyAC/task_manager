@@ -17,7 +17,7 @@ function switchTheme(themeId) {
 
 // Load the default theme (flat.css) on page load
 function loadDefaultTheme() {
-    const themes = ["academiaTheme", "cottagecoreTheme", "cyberpunkTheme", "flatTheme", "ideTheme", "kidTheme", "newspaperTheme", "zenTheme"];
+    const themes = ["academiaTheme", "cottagecoreTheme", "cyberpunkTheme", "flatTheme", "ideTheme", "kidTheme", "newspaperTheme", "zenTheme", "swingTheme","swaveTheme"];
     themes.forEach(theme => {
         const linkElement = document.createElement("link");
         linkElement.rel = "stylesheet";
@@ -36,7 +36,7 @@ function loadDefaultTheme() {
 
 // Event listener for the change aesthetic button
 document.getElementById("changeAestheticButton").addEventListener("click", () => {
-    const themes = ["academiaTheme", "cottagecoreTheme", "cyberpunkTheme", "flatTheme", "ideTheme", "kidTheme", "newspaperTheme", "zenTheme"];
+    const themes = ["academiaTheme", "cottagecoreTheme", "cyberpunkTheme", "flatTheme", "ideTheme", "kidTheme", "newspaperTheme", "zenTheme", "swingTheme","swaveTheme"];
     let currentThemeIndex = themes.indexOf(localStorage.getItem("selectedTheme") || "flatTheme");
     currentThemeIndex = (currentThemeIndex + 1) % themes.length;
     switchTheme(themes[currentThemeIndex]);
